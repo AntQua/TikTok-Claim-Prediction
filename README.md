@@ -70,10 +70,6 @@ The project is divided into several key phases, with each phase stored in its re
 - Evaluate model performance using appropriate evaluation metrics.
 - Summarize findings and recommendations for TikTok’s data and moderation teams.
 
-Based on your input, here’s the revised **Modeling and Evaluation** section:
-
----
-
 ## Modeling and Evaluation
 This project focused on developing machine learning models to classify TikTok videos as either containing an "opinion" or a "claim" based on various video metadata and user engagement metrics. The process involved the development, testing, and evaluation of several models, with the ultimate goal of identifying the best-performing model for content classification.
 
@@ -86,6 +82,15 @@ Two machine learning models were evaluated for their ability to classify the vid
 - **XGBoost (Extreme Gradient Boosting) Classifier**
 
 Both models demonstrated near-perfect performance due to their ability to handle non-linear relationships and capture complex interactions in the data. However, **Random Forest** slightly outperformed XGBoost in terms of precision, recall, and F1-score.
+
+### 3. Feature Importance
+The most significant predictors identified by the Random Forest model were:
+
+video_view_count: The number of views the video received.
+video_like_count: The total number of likes.
+video_share_count: How many times the video was shared.
+video_download_count: The number of downloads for the video.
+These features, primarily tied to user engagement, were highly predictive of whether a video contained a claim or opinion.
 
 ## Conclusion
 The machine learning model developed in this project successfully classifies claims in TikTok videos, providing a scalable solution for content moderation. Future improvements may include refining feature engineering, incorporating more data, and further tuning the machine learning models to increase prediction accuracy. The next steps involve deploying the model and integrating it into TikTok’s moderation pipeline.
