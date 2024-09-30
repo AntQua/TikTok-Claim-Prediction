@@ -94,7 +94,7 @@ These features, which are closely tied to user engagement, were highly predictiv
 
 The plot below shows the importance of each feature as measured by the decrease in impurity across the dataset:
 
-![Feature Importances](../images/feature_importances.png)
+![Feature Importances](./images/feature_importances.png)
 
 As shown, **video_view_count** had the highest predictive power, followed by **video_like_count** and **video_share_count**. Other features, including **video_duration_sec**, also played a role but had less influence in the final model.
 
