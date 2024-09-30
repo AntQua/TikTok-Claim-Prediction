@@ -85,12 +85,19 @@ Both models demonstrated near-perfect performance due to their ability to handle
 
 ### 3. Feature Importance
 The most significant predictors identified by the Random Forest model were:
+- **video_view_count**: The number of views the video received.
+- **video_like_count**: The total number of likes.
+- **video_share_count**: How many times the video was shared.
+- **video_download_count**: The number of downloads for the video.
 
-video_view_count: The number of views the video received.
-video_like_count: The total number of likes.
-video_share_count: How many times the video was shared.
-video_download_count: The number of downloads for the video.
-These features, primarily tied to user engagement, were highly predictive of whether a video contained a claim or opinion.
+These features, which are closely tied to user engagement, were highly predictive of whether a video was categorized as a claim or opinion.
+
+The plot below shows the importance of each feature as measured by the decrease in impurity across the dataset:
+
+![Feature Importances](../images/feature_importances.png)
+
+As shown, **video_view_count** had the highest predictive power, followed by **video_like_count** and **video_share_count**. Other features, including **video_duration_sec**, also played a role but had less influence in the final model.
+
 
 ## Conclusion
 The machine learning model developed in this project successfully classifies claims in TikTok videos, providing a scalable solution for content moderation. Future improvements may include refining feature engineering, incorporating more data, and further tuning the machine learning models to increase prediction accuracy. The next steps involve deploying the model and integrating it into TikTok’s moderation pipeline.
