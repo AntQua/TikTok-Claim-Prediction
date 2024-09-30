@@ -70,8 +70,22 @@ The project is divided into several key phases, with each phase stored in its re
 - Evaluate model performance using appropriate evaluation metrics.
 - Summarize findings and recommendations for TikTok’s data and moderation teams.
 
+Based on your input, here’s the revised **Modeling and Evaluation** section:
+
+---
+
 ## Modeling and Evaluation
-In this project, various models were evaluated to classify claims in TikTok videos. The initial phase involved building a regression model, followed by advanced machine learning algorithms like Random Forest, Gradient Boosting, and Logistic Regression. Performance metrics such as accuracy, precision, recall, and F1-score were used to evaluate the models. Gradient Boosting provided the best results on the test data.
+This project focused on developing machine learning models to classify TikTok videos as either containing an "opinion" or a "claim" based on various video metadata and user engagement metrics. The process involved the development, testing, and evaluation of several models, with the ultimate goal of identifying the best-performing model for content classification.
+
+### 1. Regression Modeling
+The initial phase of the project involved building a baseline regression model. This provided an early understanding of the relationships between features such as video views, likes, shares, and the claim classification. Regression analysis also helped identify key predictors, setting the stage for the machine learning models to follow.
+
+### 2. Machine Learning Models
+Two machine learning models were evaluated for their ability to classify the videos accurately:
+- **Random Forest Classifier**
+- **XGBoost (Extreme Gradient Boosting) Classifier**
+
+Both models demonstrated near-perfect performance due to their ability to handle non-linear relationships and capture complex interactions in the data. However, **Random Forest** slightly outperformed XGBoost in terms of precision, recall, and F1-score.
 
 ## Conclusion
 The machine learning model developed in this project successfully classifies claims in TikTok videos, providing a scalable solution for content moderation. Future improvements may include refining feature engineering, incorporating more data, and further tuning the machine learning models to increase prediction accuracy. The next steps involve deploying the model and integrating it into TikTok’s moderation pipeline.
