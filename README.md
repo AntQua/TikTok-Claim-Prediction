@@ -96,7 +96,7 @@ The plot below shows the importance of each feature as measured by the decrease 
 
 ![Feature Importances](./images/feature_importances.png)
 
-As shown, **video_view_count** had the highest predictive power, followed by **video_like_count** and **video_share_count**. Other features, including **video_duration_sec**, also played a role but had less influence in the final model.
+As shown, **video_view_count** had the highest predictive power, followed by **video_like_count** and **video_share_count**. 
 
 
 ## Conclusion
